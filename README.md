@@ -1,42 +1,73 @@
-# 📊 Task 6 - Sales Trend Analysis Using SQL
+# 📊 Sales Trend Analysis Using SQL
 
-## 📌 Overview
+<div align="center">
 
-This project is part of a Data Analyst Internship task focused on analyzing monthly sales trends using SQL aggregate functions. The analysis calculates monthly revenue and order volume from an online sales dataset, helping identify sales performance over time.
+![SQL](https://img.shields.io/badge/SQL-Database-blue?style=for-the-badge&logo=mysql)
+![MySQL](https://img.shields.io/badge/MySQL-Workbench-orange?style=for-the-badge&logo=mysql)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+
+### 📈 Data Analyst Internship Project
+
+**Analyzing Monthly Sales Trends using SQL Aggregate Functions**
+
+</div>
 
 ---
 
-## 🎯 Objective
+# 📖 About the Project
 
-- Analyze monthly sales trends.
-- Calculate total monthly revenue.
-- Calculate monthly order volume.
-- Learn to use SQL aggregate functions and grouping techniques for business reporting.
+This project was developed as part of a **Data Analyst Internship** to demonstrate SQL skills for analyzing business data.
+
+Using an **Online Sales** dataset, the project calculates:
+
+- 💰 Monthly Revenue
+- 📦 Monthly Order Volume
+- 📅 Sales Trends by Month & Year
+- 🏆 Top Performing Sales Months
+
+The analysis showcases how SQL can transform raw transactional data into meaningful business insights.
 
 ---
 
-## 🗂 Dataset
+# 🎯 Project Objectives
 
-**Table Name:** `online_sales`
+✅ Analyze monthly sales performance
+
+✅ Calculate total monthly revenue
+
+✅ Measure monthly order volume
+
+✅ Perform trend analysis using SQL
+
+✅ Apply aggregate functions and grouping techniques
+
+---
+
+# 🗂 Dataset
+
+### Table: `online_sales`
 
 | Column | Description |
-|--------|-------------|
-| order_id | Unique order identifier |
-| order_date | Date of the order |
-| amount | Sales amount |
-| product_id | Product identifier |
+|---------|-------------|
+| 🆔 order_id | Unique Order ID |
+| 📅 order_date | Date of Order |
+| 💵 amount | Revenue Generated |
+| 📦 product_id | Product Identifier |
 
 ---
 
-## 🛠 Tools Used
+# 🛠 Tech Stack
 
-- MySQL Workbench
-- SQL
-- GitHub
+| Technology | Purpose |
+|------------|---------|
+| MySQL Workbench | Database Management |
+| SQL | Data Analysis |
+| GitHub | Version Control & Project Hosting |
 
 ---
 
-## 📚 SQL Concepts Covered
+# 📚 SQL Concepts Used
 
 - SELECT
 - SUM()
@@ -47,89 +78,118 @@ This project is part of a Data Analyst Internship task focused on analyzing mont
 - MONTH()
 - Aggregate Functions
 - Sales Trend Analysis
+- Business Reporting
 
 ---
 
-## 📄 Files Included
+# 📂 Project Structure
 
-```
-Task-6-Sales-Trend-Analysis
+```text
+Task-6-Sales-Trend-Analysis/
 │
 ├── dataset.sql
 ├── sales_trend_analysis.sql
 ├── README.md
-└── Screenshots
+└── Screenshots/
     ├── output1.png
     └── output2.png
 ```
 
 ---
 
-## 📈 SQL Query
+# 📈 SQL Analysis
 
-The analysis groups records by **Year** and **Month** to calculate:
+The project performs the following analysis:
 
-- Monthly Revenue using `SUM(amount)`
-- Monthly Order Volume using `COUNT(DISTINCT order_id)`
+✔ Groups data by **Year** and **Month**
 
-The project also includes a query to identify the **Top 3 Months by Revenue**.
+✔ Calculates **Monthly Revenue**
 
----
+✔ Calculates **Monthly Order Volume**
 
-## 📊 Sample Output
+✔ Sorts records chronologically
 
-| Year | Month | Monthly Revenue | Order Volume |
-|------|------:|----------------:|-------------:|
-| 2024 | 1 | 2050.00 | 2 |
-| 2024 | 2 | 2450.00 | 2 |
-| 2024 | 3 | 4100.00 | 3 |
-| 2024 | 4 | 2700.00 | 2 |
-| 2024 | 5 | 2400.00 | 1 |
+✔ Finds the **Top 3 Months by Sales Revenue**
 
 ---
 
-## 📌 Key Insights
+# 📊 Sample Output
 
-- March recorded the highest monthly revenue.
-- Monthly revenue was calculated using the `SUM()` aggregate function.
-- Monthly order volume was calculated using `COUNT(DISTINCT order_id)`.
-- Results were grouped by year and month using `GROUP BY`.
-- Data was sorted chronologically using `ORDER BY`.
-
----
-
-## 📸 Screenshots
-
-### SQL Query
-
-The `query.png` file contains the SQL query used for the analysis.
-
-### Output
-
-The `output.png` file shows the result of the executed SQL queries.
+| Year | Month | Revenue | Orders |
+|------:|------:|---------:|--------:|
+| 2024 | 01 | 2050.00 | 2 |
+| 2024 | 02 | 2450.00 | 2 |
+| 2024 | 03 | ⭐ 4100.00 | 3 |
+| 2024 | 04 | 2700.00 | 2 |
+| 2024 | 05 | 2400.00 | 1 |
 
 ---
 
-## 🎓 Learning Outcomes
+# 💡 Key Insights
 
-Through this project, I learned how to:
+📌 March generated the **highest revenue** among all months.
 
-- Perform sales trend analysis using SQL.
-- Use aggregate functions for business reporting.
-- Group data by month and year.
-- Generate meaningful insights from transactional data.
-- Write clean and efficient SQL queries.
+📌 SQL aggregate functions simplify business reporting.
 
----
+📌 Grouping data by month helps identify sales trends.
 
-## 👨‍💻 Author
+📌 Monthly order volume provides insight into customer activity.
 
-**Mahima Sebastian**
-
-Data Analyst Intern
+📌 Trend analysis supports better business decision-making.
 
 ---
 
-## ⭐ Acknowledgement
+# 📸 Screenshots
 
-This project was completed as part of a Data Analyst Internship assignment to demonstrate SQL data analysis skills and the use of aggregate functions for business intelligence.
+The **Screenshots** folder contains:
+
+- 🖥 SQL Query Execution
+- 📊 Query Output Results
+
+---
+
+# 🎓 Learning Outcomes
+
+This project strengthened my understanding of:
+
+- SQL Query Writing
+- Aggregate Functions
+- Data Grouping & Sorting
+- Time-Series Sales Analysis
+- Business Intelligence Reporting
+- GitHub Project Documentation
+
+---
+
+# 🚀 Future Improvements
+
+- Add yearly sales comparison
+- Create interactive dashboards using Power BI or Tableau
+- Visualize monthly trends with charts
+- Include customer and product-level analysis
+
+---
+
+# 👩‍💻 Author
+
+## Mahima Sebastian
+
+**Aspiring Data Analyst**
+
+🔗 **GitHub:** https://github.com/mahimasebastian
+
+---
+
+# ⭐ Acknowledgement
+
+This project was completed as part of a **Data Analyst Internship** to demonstrate SQL-based sales trend analysis using aggregate functions and business reporting techniques.
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving it a Star!
+
+**Thank you for visiting this repository! 😊**
+
+</div>
